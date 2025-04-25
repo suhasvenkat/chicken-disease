@@ -22,5 +22,24 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.8",
+    install_requires=[
+        "tensorflow",
+        "pandas",
+        "dvc",
+        "notebook",
+        "matplotlib",
+        "seaborn",
+        "python-box==6.0.2",
+        "pyyaml",
+        "tqdm",
+        "ensure==1.0.2",
+        "joblib",
+        "types-pyyaml",
+        "scipy",
+        "flask",
+        "flask-cors"
+    ],
+    setup_requires=["setuptools>=64.0.0"],
 )
